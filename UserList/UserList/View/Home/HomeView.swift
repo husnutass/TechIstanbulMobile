@@ -29,6 +29,13 @@ struct HomeView: View {
                         Text("\(user.name)")
                     }
                 }
+                .onDelete(perform: { indexSet in
+                    Task {
+                        for index in indexSet {
+                            await viewModel.deleteUser(id: filteredUsers[index].id)
+                        }
+                    }
+                })
             }
             .refreshable {
                 await viewModel.getUsers()
@@ -46,8 +53,14 @@ struct HomeView: View {
             .sheet(isPresented: $isPresented, content: {
                 NewUserView(isPresented: $isPresented)
             })
+            .alert(viewModel.errorMessage, isPresented: $viewModel.isErrorShowing, actions: {
+//                Text(viewModel.errorMessage)
+            })
             .task {
                 await viewModel.getUsers()
+            }
+            .onAppear {
+//                viewModel.getUsers()
             }
         }
     }

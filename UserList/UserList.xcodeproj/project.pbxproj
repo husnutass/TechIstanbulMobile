@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC78F7972B6647E200D8FDB5 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC78F7962B6647E200D8FDB5 /* APIManager.swift */; };
+		BC78F7992B66594B00D8FDB5 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC78F7982B66594B00D8FDB5 /* CustomError.swift */; };
+		BC78F79B2B66597900D8FDB5 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC78F79A2B66597900D8FDB5 /* Endpoint.swift */; };
+		BC78F79D2B66598900D8FDB5 /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC78F79C2B66598900D8FDB5 /* HttpMethod.swift */; };
+		BC78F79F2B66610500D8FDB5 /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC78F79E2B66610500D8FDB5 /* ServiceProvider.swift */; };
+		BC78F7A22B6661ED00D8FDB5 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC78F7A12B6661ED00D8FDB5 /* UserService.swift */; };
+		BC78F7A42B6662E200D8FDB5 /* GameService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC78F7A32B6662E200D8FDB5 /* GameService.swift */; };
+		BC78F7A62B66630300D8FDB5 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC78F7A52B66630300D8FDB5 /* BaseService.swift */; };
 		BCFAF27C2B5D182A00C20A9C /* UserListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFAF27B2B5D182A00C20A9C /* UserListApp.swift */; };
 		BCFAF27E2B5D182A00C20A9C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFAF27D2B5D182A00C20A9C /* HomeView.swift */; };
 		BCFAF2802B5D182C00C20A9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCFAF27F2B5D182C00C20A9C /* Assets.xcassets */; };
@@ -28,6 +36,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC78F7962B6647E200D8FDB5 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		BC78F7982B66594B00D8FDB5 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		BC78F79A2B66597900D8FDB5 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		BC78F79C2B66598900D8FDB5 /* HttpMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
+		BC78F79E2B66610500D8FDB5 /* ServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProvider.swift; sourceTree = "<group>"; };
+		BC78F7A12B6661ED00D8FDB5 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		BC78F7A32B6662E200D8FDB5 /* GameService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameService.swift; sourceTree = "<group>"; };
+		BC78F7A52B66630300D8FDB5 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
 		BCFAF2782B5D182A00C20A9C /* UserList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UserList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCFAF27B2B5D182A00C20A9C /* UserListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListApp.swift; sourceTree = "<group>"; };
 		BCFAF27D2B5D182A00C20A9C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -60,6 +76,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC78F7A02B6661A300D8FDB5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BC78F7A12B6661ED00D8FDB5 /* UserService.swift */,
+				BC78F7A32B6662E200D8FDB5 /* GameService.swift */,
+				BC78F7A52B66630300D8FDB5 /* BaseService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		BCFAF26F2B5D182A00C20A9C = {
 			isa = PBXGroup;
 			children = (
@@ -147,7 +173,13 @@
 		BCFAF2A12B5D1E6D00C20A9C /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				BC78F7A02B6661A300D8FDB5 /* Services */,
 				BCFAF2A22B5D1E8100C20A9C /* Firestore */,
+				BC78F7962B6647E200D8FDB5 /* APIManager.swift */,
+				BC78F7982B66594B00D8FDB5 /* CustomError.swift */,
+				BC78F79A2B66597900D8FDB5 /* Endpoint.swift */,
+				BC78F79C2B66598900D8FDB5 /* HttpMethod.swift */,
+				BC78F79E2B66610500D8FDB5 /* ServiceProvider.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -251,12 +283,20 @@
 			files = (
 				BCFAF29E2B5D1E0900C20A9C /* NewUserView.swift in Sources */,
 				BCFAF2A42B5D1E9B00C20A9C /* FirestoreManager.swift in Sources */,
+				BC78F79F2B66610500D8FDB5 /* ServiceProvider.swift in Sources */,
+				BC78F79D2B66598900D8FDB5 /* HttpMethod.swift in Sources */,
+				BC78F7972B6647E200D8FDB5 /* APIManager.swift in Sources */,
 				BCFAF27E2B5D182A00C20A9C /* HomeView.swift in Sources */,
 				BCFAF2AB2B5D35D400C20A9C /* HomeViewModel.swift in Sources */,
+				BC78F7A42B6662E200D8FDB5 /* GameService.swift in Sources */,
 				BCFAF2AD2B5D37CD00C20A9C /* DetailViewModel.swift in Sources */,
 				BCFAF2A92B5D28D700C20A9C /* NewUserViewModel.swift in Sources */,
+				BC78F7992B66594B00D8FDB5 /* CustomError.swift in Sources */,
 				BCFAF29B2B5D1DF300C20A9C /* DetailView.swift in Sources */,
+				BC78F7A62B66630300D8FDB5 /* BaseService.swift in Sources */,
+				BC78F7A22B6661ED00D8FDB5 /* UserService.swift in Sources */,
 				BCFAF2A02B5D1E1B00C20A9C /* User.swift in Sources */,
+				BC78F79B2B66597900D8FDB5 /* Endpoint.swift in Sources */,
 				BCFAF27C2B5D182A00C20A9C /* UserListApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,8 +428,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"UserList/Preview Content\"";
 				DEVELOPMENT_TEAM = 2BAW85345C;
 				ENABLE_PREVIEWS = YES;
@@ -407,6 +448,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.husnutas.UserList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -418,8 +460,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"UserList/Preview Content\"";
 				DEVELOPMENT_TEAM = 2BAW85345C;
 				ENABLE_PREVIEWS = YES;
@@ -437,6 +480,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.husnutas.UserList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

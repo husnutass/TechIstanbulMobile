@@ -7,6 +7,8 @@
 
 import Foundation
 
+typealias Users = [User]
+
 struct User: Codable, Identifiable {
     var id: String
     var name: String

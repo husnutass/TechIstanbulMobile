@@ -30,7 +30,7 @@ struct DetailView: View {
                 
                 Spacer()
             }
-            .background(Color.blue)
+            .background(Color.myYellow)
             
             Text(viewModel.user?.bio ?? "Bio")
             

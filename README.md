@@ -11,3 +11,7 @@ Xcode kurulumu: [Xcode](https://youtu.be/CLTFPcXyvhQ?si=fwDyZnm2ipRUlyV4)
 - SwiftUI ile UIKit farkları
 - UIKit ile sıfırdan programmatic uygulama geliştirme
 - SwiftUI ile Firebase Firestore kullanarak UserList uygulamasını geliştirme
+
+## Üçüncü Hafta
+- API entegrasyonu
+- App Store süreçleri
