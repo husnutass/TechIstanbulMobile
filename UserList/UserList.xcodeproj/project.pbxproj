@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC3F9ED92B6827C90032F683 /* DeleteUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3F9ED82B6827C90032F683 /* DeleteUser.swift */; };
 		BC78F7972B6647E200D8FDB5 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC78F7962B6647E200D8FDB5 /* APIManager.swift */; };
 		BC78F7992B66594B00D8FDB5 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC78F7982B66594B00D8FDB5 /* CustomError.swift */; };
 		BC78F79B2B66597900D8FDB5 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC78F79A2B66597900D8FDB5 /* Endpoint.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC3F9ED82B6827C90032F683 /* DeleteUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteUser.swift; sourceTree = "<group>"; };
 		BC78F7962B6647E200D8FDB5 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		BC78F7982B66594B00D8FDB5 /* CustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
 		BC78F79A2B66597900D8FDB5 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				BCFAF29F2B5D1E1B00C20A9C /* User.swift */,
+				BC3F9ED82B6827C90032F683 /* DeleteUser.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				BCFAF29E2B5D1E0900C20A9C /* NewUserView.swift in Sources */,
 				BCFAF2A42B5D1E9B00C20A9C /* FirestoreManager.swift in Sources */,
 				BC78F79F2B66610500D8FDB5 /* ServiceProvider.swift in Sources */,
+				BC3F9ED92B6827C90032F683 /* DeleteUser.swift in Sources */,
 				BC78F79D2B66598900D8FDB5 /* HttpMethod.swift in Sources */,
 				BC78F7972B6647E200D8FDB5 /* APIManager.swift in Sources */,
 				BCFAF27E2B5D182A00C20A9C /* HomeView.swift in Sources */,

@@ -17,7 +17,7 @@ final class UserService: BaseService {
         }
     }
     
-    func deleteUser(id: String) async throws -> String {
+    func deleteUser(id: String) async throws -> DeleteUser {
         do {
             return try await apiManager.fetchData(endpoint: .users, httpMethod: .delete, path: id)
         } catch {

@@ -27,8 +27,7 @@ final class HomeViewModel: ObservableObject {
     
     func deleteUser(id: String) async {
         do {
-            let msg = try await service.deleteUser(id: id)
-            print(msg)
+            let _ = try await service.deleteUser(id: id)
         } catch {
             self.handleError(error: error)
         }
